@@ -1,0 +1,149 @@
+section.sub-top {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+section.sub-top h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.75rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+section.sub-top p {
+  font-size: 2.625rem;
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+section.text {
+  max-width: 1200px;
+  margin: 150px auto 20px auto;
+}
+section.text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+section.text h3 {
+  font-size: 3.75rem;
+  font-weight: 900;
+}
+
+div.icon-list {
+  display: flex;
+  width: 1200px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+div.icon-list h4 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 64px;
+  max-width: 600px;
+}
+div.icon-list ul {
+  max-width: 58%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 115px;
+}
+div.icon-list li {
+  margin-bottom: 80px;
+  width: 282px;
+}
+div.icon-list li figcaption {
+  width: 258px;
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin: 12px 0px 20px 0px;
+}
+div.icon-list li p {
+  font-size: 1.125rem;
+  line-height: 34px;
+}
+
+li.ooo {
+  margin-right: 125px;
+}
+
+div.banner-img2 {
+  background-image: url("../img/benefit/bg-img.jpg");
+  width: 100%;
+  padding-top: 32%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.img01 {
+  background-image: url("../img/benefit/benefit-img-01.png");
+  width: 100%;
+  padding-top: 32%;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+div.img02 {
+  background-image: url("../img/benefit/benefit-img-02_n1.png");
+  width: 100%;
+  padding-top: 32%;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+div.img03 {
+  background-image: url("../img/benefit/benefit-img-03.png");
+  width: 100%;
+  padding-top: 32%;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+div.img04 {
+  background-image: url("../img/benefit/benefit-img-04.png");
+  width: 100%;
+  padding-top: 32%;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 150%;
+  height: 640px;
+  transform: translateX(-21.5%);
+  margin-bottom: 200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 940px;
+  height: 590px;
+}
+
+.swiper-wrapper img {
+  width: 900px;
+  margin: 50px 0px 200px 0px;
+  padding: 0px 15px;
+  cursor: url("../img/DRAG.cur") 50 50, auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=benefit.css.map */

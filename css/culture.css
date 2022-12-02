@@ -1,0 +1,182 @@
+div.banner-img {
+  background-image: url("../img/culture/fff.jpg");
+  width: 100%;
+  padding-top: 31.2%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.banner-img2 {
+  background-image: url("../img/culture/culture-bg-03_n1.jpg");
+  width: 100%;
+  padding-top: 28.5%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.sub-top {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+section.sub-top h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.75rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+section.sub-top p {
+  font-size: 2.625rem;
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+section.section01 {
+  max-width: 1200px;
+  margin: 155px auto 0px auto;
+  position: relative;
+  z-index: 1;
+}
+section.section01 h3 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section.section01 ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.section01 ul figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  margin-top: 20px;
+}
+section.section01 ul p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+section.section01 ul li:nth-of-type(1) {
+  order: 2;
+  margin-left: auto;
+}
+section.section01 ul li:nth-of-type(2) {
+  order: 1;
+  margin-top: 20vw;
+}
+section.section01 ul li:nth-of-type(3) {
+  order: 4;
+  padding-right: 5%;
+  margin: 100px 0px 0px auto;
+}
+section.section01 ul li:nth-of-type(4) {
+  order: 3;
+  margin: 400px auto 200px 0px;
+}
+section.section01 div.bg01 {
+  width: 1247px;
+  height: 190px;
+  background-image: url("../img/culture/culture-bg-01.png");
+  position: absolute;
+  top: 14%;
+  left: 22%;
+  transform: translateX(-50%);
+  z-index: -1;
+  overflow: hidden;
+}
+section.section01 div.bg02 {
+  width: 1803px;
+  height: 180px;
+  background-image: url("../img/culture/culture-bg-02.png");
+  position: absolute;
+  bottom: 39%;
+  left: 62%;
+  transform: translateX(-50%);
+  z-index: -1;
+  overflow: hidden;
+}
+
+div.banner-img2 {
+  position: relative;
+}
+div.banner-img2 p {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.section02 {
+  max-width: 1200px;
+  margin: 150px auto 0px auto;
+}
+section.section02 li {
+  margin-bottom: 150px;
+}
+section.section02 li:nth-of-type(2) img {
+  width: 480px;
+}
+section.section02 div {
+  max-width: 40%;
+}
+section.section02 figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section02 figure figcaption {
+  font-size: 1.375rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+section.section02 figure b {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+section.section02 figure p {
+  font-size: 1.125rem;
+  line-height: 34px;
+  margin-top: 40px;
+  font-weight: 200;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 150%;
+  height: 640px;
+  transform: translateX(-21.5%);
+  margin-bottom: 200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 940px;
+  height: 590px;
+}
+
+.swiper-wrapper img {
+  width: 900px;
+  margin: 50px 0px 200px 0px;
+  padding: 0px 15px;
+  cursor: url("../img/DRAG.cur") 50 50, auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=culture.css.map */

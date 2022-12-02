@@ -1,0 +1,17 @@
+// $mo : 360px;
+// $ta : 768px;
+
+
+// @mixin device($min, $max) {
+//     @media (min-width:$min)and(max-width:$max) {
+//         @content
+//     }
+// }
+
+// @include device($min, $max){
+//     body{background-color: red;}
+// };
+
+// @include device(787px,1024px){
+//     body{background-color: blue;}
+// };

@@ -1,0 +1,103 @@
+$size : 1200px;
+
+section{
+    width: $size;
+    margin: 100px auto 0px auto;
+    h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 4.75rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+}
+
+ul.nav{
+    width: $size;
+    display: flex;
+    margin: 50px auto;
+    
+    li{
+        font-family: 'Poppins', sans-serif;
+        padding: 0px 20px;
+        font-size: 1.625rem;
+        font-weight: bold;
+        a{
+            color: #7f7f7f;
+        }    
+    }
+    li:nth-of-type(1) {
+        padding: 0px 20px 0px 0px;
+        position: relative;
+        a{
+            color: #000;   
+        }
+    }
+}
+
+ul.nav li:nth-of-type(1)::after{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #000;
+    bottom: -50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+ul.list{
+    max-width: $size;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+        height: 510px;
+    
+        figure{
+            width: 382px;
+            display: flex;
+            flex-direction: column;
+            img{
+                height: 230px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+            b{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 100;
+            }
+            figcaption{
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 40px;
+                margin: 10px 0px 30px 0px;
+            }
+            p{
+                font-size: 0.98rem;
+                color: #888;
+            }
+        }
+    }
+}
+
+ul.page-num{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    
+    li:nth-of-type(1) a{
+        color: #000;
+        font-weight: bold;
+    }
+    a{
+        padding: 0px 10px;
+        margin: 0px 10px;
+        color: #aaa;
+        &:hover{
+            color: rgb(28, 28, 28);
+        }
+    }
+}

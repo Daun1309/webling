@@ -1,0 +1,20 @@
+
+<div class="parent"><div class="child">텍스트 애니메이션</div></div>
+
+.parent {
+    height: 3em; /* 애니메이션 높이 */
+    overflow-y: hidden;
+    display: block;
+}
+.parent .child {
+    font-size: 3em;/* 애니메이션 높이 */
+    font-weight: bold;
+    line-height: 1;
+    animation-name: grow;
+    animation-duration: 1s;/* 애니메이션 시간 */
+}
+/* 키프레임 애니메이션 */
+@keyframes grow {
+    from { transform: translateY(3em) }/* 애니메이션 높이 */
+    to { transform: translateY(0) }
+}
