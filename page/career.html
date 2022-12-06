@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>career</title>
+    <title>career - 위블링</title>
 
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/career.css" rel="stylesheet">
+    <link rel="icon" href="../img/W.png" type="image/x-icon" sizes="16x16">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <header>
@@ -177,5 +182,17 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const h2 = document.querySelectorAll('h2');
+        const subTop = document.querySelectorAll('.sub-top >p');
+
+        for(let i = 0; i< h2.length; i++){
+            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        for(let i = 0; i< subTop.length; i++){
+            subTop[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+    </script>
 </body>
 </html>

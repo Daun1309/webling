@@ -107,7 +107,7 @@ section.section01{
 
 div.banner-img2{
     position: relative;
-    p{
+    h4{
         font-size: 3.75rem;
         font-weight: 700;
         color: #fff;
@@ -203,4 +203,13 @@ body {
         cursor: url("../img/DRAG.cur") 50 50, auto;
         object-fit: cover;
     }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+   
 }

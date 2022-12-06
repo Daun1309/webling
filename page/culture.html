@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>culture</title>
+    <title>culture - 위블링</title>
 
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/culture.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="icon" href="../img/W.png" type="image/x-icon" sizes="16x16">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <header>
@@ -105,7 +110,7 @@
         </section>
 
         <div class="banner-img2">
-            <p>우리는 이렇게 일하고 있습니다</p>
+            <h4>우리는 이렇게 일하고 있습니다</h4>
         </div>
 
         <section class="section02">
@@ -228,7 +233,9 @@
         <script>
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
-                spaceBetween: 20
+                spaceBetween: 20,
+                loop: true,
+                loopFillGroupWithBlank: true
             });
         </script>
     </main>
@@ -278,5 +285,34 @@
             </ul>
         </div>
     </footer>
+
+
+    <script>
+        const p = document.querySelectorAll('p');
+        const figcaption = document.querySelectorAll('figcaption');
+        const b = document.querySelectorAll('b');
+        const h3 = document.querySelectorAll('h3');
+        const h2 = document.querySelectorAll('h2');
+
+        for(let i = 0; i< p.length; i++){
+            p[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        
+        for(let i = 0; i< figcaption.length; i++){
+            figcaption[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        
+        for(let i = 0; i< b.length; i++){
+            b[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+
+        for(let i = 0; i< h3.length; i++){
+            h3[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+
+        for(let i = 0; i< h2.length; i++){
+            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+    </script>
 </body>
 </html>

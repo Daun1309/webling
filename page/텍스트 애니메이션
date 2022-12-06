@@ -18,3 +18,43 @@
     from { transform: translateY(3em) }/* 애니메이션 높이 */
     to { transform: translateY(0) }
 }
+
+<!-- <div>
+        <p>
+            <span>W</span>
+            <span>E</span>
+            <span>B</span>
+            <span>L</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </p>
+    </div>
+
+    <style>
+        span {
+	        opacity: 0;
+        }
+
+        @keyframes fade {
+        to {
+            opacity: 1;
+        }
+        }
+    </style>
+
+    <script>
+        const introText = document.querySelectorAll("span");
+
+        window.onload = () => {
+        let timer = 100;
+        introText.forEach((item) => {
+            item.style.animation = `fade 500ms ${(timer += 200)}ms forwards`;
+        });
+        };
+    </script> -->
+    /* 0%{transform: translateY(0) }
+    35%{transform: translateY(-3em)}
+
+    65%{transform: translateY(3em)}
+    100%{transform: translateY(0)} */

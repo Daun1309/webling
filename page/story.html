@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>story</title>
+    <title>story - 위블링</title>
 
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/story.css" rel="stylesheet">
+    <link rel="icon" href="../img/W.png" type="image/x-icon" sizes="16x16">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <header>
@@ -257,6 +262,22 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const top_ = document.querySelectorAll('.top');
+        const nav_ = document.querySelectorAll('.nav');
+        const list_ = document.querySelectorAll('.list');
+
+        for(let i = 0; i< top_.length; i++){
+            top_[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        for(let i = 0; i< nav_.length; i++){
+            nav_[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        for(let i = 0; i< list_.length; i++){
+            list_[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+    </script>
     
 </body>
 </html>

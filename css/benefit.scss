@@ -130,6 +130,7 @@ body {
     height: 640px;
     transform: translateX(-21.5%);
     margin-bottom: 200px;
+    
 }
 
 .swiper-slide {
@@ -155,7 +156,7 @@ body {
     display: block;
     width: 940px;
     height: 590px;
-    
+   
 }
 
 .swiper-wrapper {
@@ -171,3 +172,12 @@ body {
 }
 
 
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+   
+}

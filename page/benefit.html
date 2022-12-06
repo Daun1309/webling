@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>benefit</title>
+    <title>benefit - 위블링</title>
 
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/benefit.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="../img/W.png" type="image/x-icon" sizes="16x16">
 </head>
 <body>
     <header>
@@ -49,13 +54,13 @@
     <main>
         <section class="sub-top">
             <h2>Benefit</h2>
-            <p>업무에 진심인 당신이 더 몰입할 수 있도록</p>
+            <p class="s-t">업무에 진심인 당신이 더 몰입할 수 있도록</p>
         </section>
 
         <div class="banner-img2"></div>
 
         <section class="text">
-            <p>Happy to work at WEBLING</p>
+            <p class="s-t">Happy to work at WEBLING</p>
             <h3>함께하는 멤버에게 아낌없이 드려요</h3>
         </section>
 
@@ -408,8 +413,32 @@
         <script>
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
-                spaceBetween: 20
+                spaceBetween: 20,
+                loop: true,
+                loopFillGroupWithBlank: true
             });
+
+        const st = document.querySelectorAll('.s-t');
+        const h2 = document.querySelectorAll('h2');
+        const h3 = document.querySelectorAll('h3');
+        const h4 = document.querySelectorAll('h4');
+
+        for(let i = 0; i< st.length; i++){
+            st[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+
+        for(let i = 0; i< h4.length; i++){
+            h4[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+        
+        for(let i = 0; i< h3.length; i++){
+            h3[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+
+        for(let i = 0; i< h2.length; i++){
+            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
+        }
+ 
         </script>
     </main>
 
