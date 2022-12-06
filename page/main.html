@@ -13,6 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <meta property = "og:url" content="사이트 url">
+    <meta property = "og:title" content="사이트명">
+    <meta property = "og:image" content="공유할 배너이미지 주소">
+    <meta property = "og:description" content="사이트 소개 내용">
   </head>
   <body>
     <script>
@@ -39,16 +44,19 @@
 
         const bg = document.querySelector("body");
         const text = document.querySelector(".gg");
+        const margin = document.querySelector(".m-wrap");
 
         setTimeout(function () {
-          bg.style.backgroundColor = "white";
-
+          bg.style.backgroundColor = "transparent";
+          bg.style.position = "relative";
+          bg.style.transition = "1500ms";
+          margin.style.display = "none";
           text.style.display = "none";
         }, 3900);
       };
     </script>
 
-    <!-- <div id="load"></div> -->
+    <div id="load"></div>
 
     <header>
       <div class="header">
@@ -99,43 +107,7 @@
           </p>
           <a href="../page/career.html" class="apply-btn">
             APPLY TO WEBLING
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-            >
-              <defs>
-                <style>
-                  .cls-2 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-width: 1.5px;
-                  }
-                </style>
-              </defs>
-              <g id="floating-btn-icon-arrow">
-                <path id="area" fill="none" d="M0 0h14v14H0z" />
-                <g
-                  id="그룹_19"
-                  data-name="그룹 19"
-                  transform="translate(0 1.464)"
-                >
-                  <path
-                    id="패스_87"
-                    data-name="패스 87"
-                    class="cls-2"
-                    d="M1009.291 366.464h12.444"
-                    transform="translate(-1009.291 -361.77)"
-                  />
-                  <path
-                    id="header-icon-arrow"
-                    class="cls-2"
-                    d="M0 6.638V0h6.638"
-                    transform="rotate(135 5.38 4.978)"
-                  />
-                </g>
-              </g>
+            <svg xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 14 14"><defs><style>.cls-2 {fill: none;stroke: #fff;stroke-width: 1.5px;}</style></defs><g id="floating-btn-icon-arrow"><path id="area" fill="none" d="M0 0h14v14H0z" /><g id="그룹_19"data-name="그룹 19"transform="translate(0 1.464)"><path id="패스_87"data-name="패스 87"class="cls-2"d="M1009.291 366.464h12.444"transform="translate(-1009.291 -361.77)"/><path id="header-icon-arrow"class="cls-2"d="M0 6.638V0h6.638"transform="rotate(135 5.38 4.978)"/></g></g>
             </svg>
           </a>
         </div>
@@ -575,7 +547,7 @@
 
         <div class="circle-text">
           <h3>
-            개인의 취향을 존중하는<br />
+            개인의 취향을 존중하는<br/>
             인공지능 서비스
           </h3>
           <b>개인 맞춤형 서비스로 취향을 큐레이션</b>
@@ -665,42 +637,55 @@
 
       <a href="../page/career.html" class="apply-btn-2">
         APPLY TO WEBLING
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-        >
-          <defs>
-            <style>
-              .cls-2 {
-                fill: none;
-                stroke: #fff;
-                stroke-width: 1.5px;
-              }
-            </style>
-          </defs>
-          <g id="floating-btn-icon-arrow">
-            <path id="area" fill="none" d="M0 0h14v14H0z" />
-            <g id="그룹_19" data-name="그룹 19" transform="translate(0 1.464)">
-              <path
-                id="패스_87"
-                data-name="패스 87"
-                class="cls-2"
-                d="M1009.291 366.464h12.444"
-                transform="translate(-1009.291 -361.77)"
-              />
-              <path
-                id="header-icon-arrow"
-                class="cls-2"
-                d="M0 6.638V0h6.638"
-                transform="rotate(135 5.38 4.978)"
-              />
-            </g>
-          </g>
+        <svg xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 14 14"><defs><style>.cls-2 {fill: none;stroke: #fff;stroke-width: 1.5px;}</style></defs><g id="floating-btn-icon-arrow"><path id="area" fill="none" d="M0 0h14v14H0z" /><g id="그룹_19"data-name="그룹 19"transform="translate(0 1.464)"><path id="패스_87"data-name="패스 87"class="cls-2"d="M1009.291 366.464h12.444"transform="translate(-1009.291 -361.77)"/><path id="header-icon-arrow"class="cls-2"d="M0 6.638V0h6.638"transform="rotate(135 5.38 4.978)"/></g></g>
         </svg>
       </a>
     </main>
+
+    <footer>
+      <div class="info-wrap">
+        <a href="#"><img src="../img/main/logo_img.svg" /></a>
+        <ul class="info-top">
+          <li>대표이사 김성경</li>
+          <li>사업자 등록번호</li>
+          <li>서울 영등포구 여의대로 24 전국경제인연합회회관 21층, 위블링</li>
+        </ul>
+        <ul class="into-bottom">
+          <li>ⓒ 2022WEBLING Inc. All rights reserved.&nbsp;&nbsp;&nbsp;</li>
+          <li>개인정보처리방침 |&nbsp;쿠키정책</li>
+        </ul>
+      </div>
+      <div class="sns-link-wrap">
+        <ul class="sns-link">
+          <li class="sns-link-list">
+            SNAPS <span> > </span>
+            <ul class="sns-link-s">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="sns-link-list">
+            OH PRINT.ME <span> > </span>
+            <ul class="sns-link-s">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="sns-link-list">
+            OROUND <span> > </span>
+            <ul class="sns-link-s">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+              <li>Tiktok</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <footer>
       <div class="info-wrap">
@@ -763,6 +748,26 @@
       for (let i = 0; i < b.length; i++) {
         b[i].classList.add("animate__animated", "animate__fadeInUp");
       }
+
+      // let acc = document.querySelectorAll(".accordion");
+      // let panel = document.querySelectorAll(".panel");
+      // let j = 0;
+
+      // acc.forEach(function(button,key){
+      //   button.addEventListener("click", function(){
+      //     if(j!=key){
+      //       acc[j].classList.remove("active");
+      //       panel[j],style.maxHeight = null;
+      //     }
+      //     button.classList.toggle("active");
+      //     if(panel[key].style.maxHeight){
+      //       panel[key].style.maxHeight = null;
+      //     }else{
+      //       penel[key].style.maxHeight = panel[key].scrollHeight + "px";
+      //     }
+      //     j = key;
+      //   });
+      // });
     </script>
   </body>
 </html>

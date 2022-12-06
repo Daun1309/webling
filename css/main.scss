@@ -850,11 +850,11 @@ div.apply-btn-2 {
     }
 
     a.apply-btn {
-      width: 190px;
-      height: 60px;
+      width: 140px;
+      height: 50px;
       background-color: #101010;
       font-family: "Poppins", sans-serif;
-      font-size: 0.7;
+      font-size: 0.6rem;
       color: #fff;
       font-weight: 500;
       border-radius: 80px;
@@ -862,7 +862,7 @@ div.apply-btn-2 {
       align-items: center;
       padding-left: 24px;
       position: absolute;
-      bottom: -140%;
+      bottom: -105%;
       left: 3%;
       transform: translate(0%, -50%);
       z-index: 999;
@@ -895,9 +895,10 @@ div.apply-btn-2 {
   div.banner-m {
     display: block;
     margin: 100px 0px 0px 0px;
-    padding: 0px 60px;
+    padding: 0px 20px;
     div.b-text-m {
     margin-bottom: 70px;
+    //width: 85%;
       p {
         font-size: 2rem;
         font-weight: 900;
@@ -933,16 +934,16 @@ div.apply-btn-2 {
     margin: 50px auto 0px 0px;
     display: flex;
     flex-direction: column;
-    padding: 0px 60px;
+    padding: 0px 20px;
 
     div.webling01-text01 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: $b;
-      margin: 50px 0px 35px 0;
+      margin: 40px 0px 35px 0;
       line-height: 150%;
     }
     div.webling01-text02 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 180%;
       p span {
         font-weight: $b;
@@ -958,21 +959,16 @@ div.apply-btn-2 {
   }
 
   div.brand-bg {
-    background-image: linear-gradient(
-      to bottom,
-      #fff,
-      #f6f6f6 8%,
-      #f6f6f6 92%,
-      #fff
-    );
+    background-image: linear-gradient(to bottom,#fff, #f6f6f6 8%, #f6f6f6 92%,#fff);
   }
   div.brand {
-    margin: 0;
+    margin: 0px 20px;
+    padding: 0;
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: $b;
-      margin: 40px 0px 110px 0px;
-      width: 40%;
+      margin: 10px 0px 110px 0px;
+      width: 100%;
     }
   }
 
@@ -1025,7 +1021,7 @@ div.apply-btn-2 {
   section.brand-list {
     display: flex;
     flex-direction: column;
-    padding: 0px 60px;
+    padding: 0px 20px;
     margin: 0;
 
     div.brand-text {
@@ -1039,23 +1035,23 @@ div.apply-btn-2 {
     }
 
     b {
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 900;
       line-height: 150%;
       margin: 10px 0px 20px 0px;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 100;
       color: #101010;
       line-height: 180%;
       margin-bottom: 40px;
     }
     a {
-      font-size: 0.9375rem;
+      font-size: 0.9rem;
       font-weight: $b;
       letter-spacing: 1.12px;
       font-family: "Poppins", sans-serif;
@@ -1092,7 +1088,7 @@ div.apply-btn-2 {
 
   div.circle-img-container-m {
     margin: 0;
-    padding: 0px 60px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
 
@@ -1100,7 +1096,7 @@ div.apply-btn-2 {
       display: inline;
       margin-bottom: 30px;
       h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 900;
         margin: 100px 0px 50px 0px;
       }
@@ -1123,11 +1119,11 @@ div.apply-btn-2 {
   div.circle-text-m {
     padding: 0;
     b {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 900;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 100;
       line-height: 150%;
       color: #555555;
@@ -1137,18 +1133,18 @@ div.apply-btn-2 {
 
   div.system {
     margin: 0;
-    padding: 0px 60px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
 
     div.system-text {
       h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 900;
         margin: 80px 0px 30px 0px;
       }
       p {
-        font-size: 1.15rem;
+        font-size: 1rem;
         font-weight: 100;
         line-height: 200%;
         span {
@@ -1169,10 +1165,10 @@ div.apply-btn-2 {
 
   a.apply-btn-2 {
     width: 87%;
-    height: 70px;
+    height: 50px;
     background-color: #101010;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8;
+    font-size: 0.7rem;
     color: #fff;
     font-weight: 500;
     border-radius: 80px;

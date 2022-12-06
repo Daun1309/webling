@@ -321,6 +321,7 @@ footer div.sns-link-wrap ul.sns-link li.sns-link-list ul.sns-link-s {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    display: none;
   }
   footer div.info-wrap ul.info-top {
     font-size: 0.8125rem;
