@@ -1,3 +1,7 @@
+main {
+  overflow: hidden;
+}
+
 section.sub-top {
   max-width: 1200px;
   margin: 100px auto;

@@ -1,3 +1,7 @@
+main {
+  overflow: hidden;
+}
+
 div.banner-img {
   background-image: url("../img/culture/fff.jpg");
   width: 100%;
