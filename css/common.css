@@ -85,6 +85,15 @@ nav.pc-nav li:hover::after {
   width: 100%;
 }
 
+a.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 2px solid #000;
+  left: 0;
+  width: 100%;
+}
+
 div.language-warp {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;

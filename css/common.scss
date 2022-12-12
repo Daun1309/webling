@@ -84,7 +84,15 @@ nav.pc-nav li::after {
     width: 0;
 }
 
-nav.pc-nav li:hover::after {
+nav.pc-nav li:hover::after{
+    width: 100%;
+}
+a.active::after{
+    position: absolute;
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000;
+    left: 0;
     width: 100%;
 }
 
