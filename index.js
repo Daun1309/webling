@@ -9,7 +9,6 @@ let idx = localStorage.idx || 0;
 function head(){
     $('header ul li').eq(idx).find('a').addClass('active');
     //$('header ul li').eq(idx).find('a').css('color','pink');
-
     test();
     console.log(idx);
 
