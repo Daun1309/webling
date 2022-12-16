@@ -10,30 +10,30 @@
     <link href="./css/culture.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="icon" href="./img/W.png" type="image/x-icon" sizes="16x16">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="./index.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
     <main>
         <section class="sub-top">
-            <h2>Culture</h2>
-            <p>회사와 직원이 함께 성장하는 곳</p>
+            <h2 data-aos="fade-up" data-aos-duration="800">Culture</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">회사와 직원이 함께 성장하는 곳</p>
         </section>
 
         <div class="banner-img"></div>
 
         <section class="section01">
-            <h3>
+            <h3 data-aos="fade-up" data-aos-duration="800">
                 위블링은 이럼 사람들이<br>
                 모여서 만들어요
             </h3>
             <ul>
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <figure>
                         <img class="img" src="./img/culture/culture-img-01.jpg" alt="">
                         <figcaption>
@@ -43,7 +43,7 @@
                     </figure>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <figure>
                         <img class="img" src="./img/culture/culture-img-02_n1.jpg" alt="">
                         <figcaption>
@@ -53,7 +53,7 @@
                     </figure>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <figure>
                         <img class="img" src="./img/culture/culture-img-03.jpg" alt="">
                         <figcaption>
@@ -63,7 +63,7 @@
                     </figure>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <figure>
                         <img class="img" src="./img/culture/culture-img-04.jpg" alt="">
                         <figcaption>
@@ -85,7 +85,7 @@
             <ul>
                 <li>
                     <figure>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1200">
                             <figcaption>
                                 위블링의 출발점
                             </figcaption>
@@ -106,7 +106,7 @@
                 <li>
                     <figure>
                         <img class="img" src="./img/culture/260c886f64211175cb511d6ba847bc27.jpg" alt="">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1200">
                             <figcaption>
                                 더 좋은 결과를 위해
                             </figcaption>
@@ -128,7 +128,7 @@
 
                 <li>
                     <figure>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1200">
                             <figcaption>
                                 모두가 함께하는
                             </figcaption>
@@ -147,7 +147,7 @@
                 <li>
                     <figure>
                         <img class="img" src="./img/culture/71c915a5cf812f5b366341c9740834f5.jpg" alt="">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1200">
                             <figcaption>
                                 업무에 임하는 마인드
                             </figcaption>
@@ -166,7 +166,7 @@
 
                 <li>
                     <figure>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1200">
                             <figcaption>
                                 창조적인 결과 창출
                             </figcaption>
@@ -205,36 +205,9 @@
                 loop: true,
                 loopFillGroupWithBlank: true
             });
+
+            AOS.init();
         </script>
     </main>
-
-
-    <script>
-        const p = document.querySelectorAll('p');
-        const figcaption = document.querySelectorAll('figcaption');
-        const b = document.querySelectorAll('b');
-        const h3 = document.querySelectorAll('h3');
-        const h2 = document.querySelectorAll('h2');
-
-        for(let i = 0; i< p.length; i++){
-            p[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        
-        for(let i = 0; i< figcaption.length; i++){
-            figcaption[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        
-        for(let i = 0; i< b.length; i++){
-            b[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-
-        for(let i = 0; i< h3.length; i++){
-            h3[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-
-        for(let i = 0; i< h2.length; i++){
-            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-    </script>
 </body>
-</html>
+</html>s

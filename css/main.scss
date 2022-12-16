@@ -30,8 +30,6 @@ $b: bold;
 // 	}
 // }
 
-
-
 section.wrap {
   position: relative;
   z-index: 1;
@@ -107,60 +105,78 @@ div.banner-m {
   display: none;
 }
 
+div.banner div.active {
+  position:fixed; top:0; left:0px; width:100%; height:100%;
+  z-index: 9;
+  background-color: #fff;
+  
+}
 div.banner {
-  margin: 100px 0px 0px 160px;
-  height: 970px;
+  margin: 0px 0px 0px 0px;
+  height: 3714px;
   position: relative;
-  div.b-text {
-    position: absolute;
-    z-index: 2;
-    p {
-      font-size: 3.75rem;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-  }
-
+  
+  
   ul {
     width: 100%;
-    height: 100%;
+    height:100vh;
+    padding:100px 0 0 160px;
     display: flex;
-    overflow: hidden;
-    position: absolute;
+    position: relative;
     z-index: 1;
+    box-sizing: border-box;
+    transition: 500ms;
+    // overflow: hidden;
+    
+    
+
+    .b-text {
+      position: absolute;
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+      p {
+        font-size: 3.75rem;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+    }
+    
     li {
       text-align: center;
-      &:nth-of-type(1) {
+      &:nth-of-type(2) {
         margin: auto 120px auto 0px;
         figcaption {
           margin-top: 30px;
         }
       }
-      &:nth-of-type(2) {
+      &:nth-of-type(3) {
         margin: 0px 120px auto 0px;
         figcaption {
           margin-top: 30px;
-        }
-      }
-      &:nth-of-type(3) {
-        margin: auto 120px 0px 0px;
-        figcaption {
-          margin-bottom: 30px;
         }
       }
       &:nth-of-type(4) {
-        margin: 0px 120px auto 0px;
-        figcaption {
-          margin-top: 30px;
-        }
-      }
-      &:nth-of-type(5) {
         margin: auto 120px 0px 0px;
         figcaption {
           margin-bottom: 30px;
         }
       }
+      &:nth-of-type(5) {
+        margin: 0px 120px auto 0px;
+        figcaption {
+          margin-top: 30px;
+        }
+      }
       &:nth-of-type(6) {
+        margin: auto 120px 0px 0px;
+        figcaption {
+          margin-bottom: 30px;
+        }
+      }
+      &:nth-of-type(7) {
         margin: 0px 120px auto 0px;
         figcaption {
           margin-top: 30px;

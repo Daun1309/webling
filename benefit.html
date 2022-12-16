@@ -9,34 +9,33 @@
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/benefit.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <link rel="icon" href="./img/W.png" type="image/x-icon" sizes="16x16">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="./index.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
 
     <main>
         <section class="sub-top">
-            <h2>Benefit</h2>
-            <p class="s-t">업무에 진심인 당신이 더 몰입할 수 있도록</p>
+            <h2 data-aos="fade-up" data-aos-duration="800">Benefit</h2>
+            <p class="s-t" data-aos="fade-up" data-aos-duration="1000">업무에 진심인 당신이 더 몰입할 수 있도록</p>
         </section>
 
         <div class="banner-img2"></div>
 
         <section class="text">
-            <p class="s-t">Happy to work at WEBLING</p>
-            <h3>함께하는 멤버에게 아낌없이 드려요</h3>
+            <p class="s-t" data-aos="fade-up" data-aos-duration="800">Happy to work at WEBLING</p>
+            <h3 data-aos="fade-up" data-aos-duration="1000">함께하는 멤버에게 아낌없이 드려요</h3>
         </section>
 
         <div class="img01"></div>
 
         <div class="icon-list">
-            <h4>
+            <h4 data-aos="fade-up" data-aos-duration="800">
                 업무 몰입을 위한<br>
                 최상의 환경을<br>
                 제공할 수 있도록
@@ -127,7 +126,7 @@
         <div class="img02"></div>
 
         <div class="icon-list">
-            <h4>
+            <h4 data-aos="fade-up" data-aos-duration="800">
                 구성원의<br>
                 성장과 개발을 위해<br>
                 아낌없는 지원을
@@ -177,7 +176,7 @@
         <div class="img03"></div>
 
         <div class="icon-list">
-            <h4>
+            <h4 data-aos="fade-up" data-aos-duration="800">
                 더 행복한 일상을 위해<br>
                 삶에 보탬이 되도록
             </h4>
@@ -272,7 +271,7 @@
         <div class="img04"></div>
 
         <div class="icon-list">
-            <h4>
+            <h4 data-aos="fade-up" data-aos-duration="800">
                 일과 가정,<br>
                 어느 하나도 놓치지<br>
                 않도록
@@ -387,27 +386,28 @@
                 loopFillGroupWithBlank: true
             });
 
-        const st = document.querySelectorAll('.s-t');
-        const h2 = document.querySelectorAll('h2');
-        const h3 = document.querySelectorAll('h3');
-        const h4 = document.querySelectorAll('h4');
+            const st = document.querySelectorAll('.s-t');
+            const h2 = document.querySelectorAll('h2');
+            const h3 = document.querySelectorAll('h3');
+            const h4 = document.querySelectorAll('h4');
 
-        for(let i = 0; i< st.length; i++){
-            st[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
+            for(let i = 0; i< st.length; i++){
+                st[i].classList.add('animate__animated', 'animate__fadeInUp');
+            }
 
-        for(let i = 0; i< h4.length; i++){
-            h4[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        
-        for(let i = 0; i< h3.length; i++){
-            h3[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
+            for(let i = 0; i< h4.length; i++){
+                h4[i].classList.add('animate__animated', 'animate__fadeInUp');
+            }
+            
+            for(let i = 0; i< h3.length; i++){
+                h3[i].classList.add('animate__animated', 'animate__fadeInUp');
+            }
 
-        for(let i = 0; i< h2.length; i++){
-            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
- 
+            for(let i = 0; i< h2.length; i++){
+                h2[i].classList.add('animate__animated', 'animate__fadeInUp');
+            }
+
+            AOS.init();
         </script>
     </main>
 

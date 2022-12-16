@@ -9,27 +9,27 @@
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/story.css" rel="stylesheet">
     <link rel="icon" href="./img/W.png" type="image/x-icon" sizes="16x16">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="./index.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
 
     <main>
         <section class="top">
-            <h2>Story</h2>
+            <h2 data-aos="fade-up" data-aos-duration="800">Story</h2>
         </section>
     
-        <ul class="nav">
+        <ul class="nav" data-aos="fade-up" data-aos-duration="1000">
             <li><a href="#">ALL</a></li>
             <li><a href="#">WEBLING</a></li>
             <li><a href="#">Media</a></li>
         </ul>
     
-        <ul class="list">
+        <ul class="list" data-aos="fade-up" data-aos-duration="1200">
             <li>
                 <figure>
                     <img src="./img/story/658385ef5dcefc48b7520a929b6c4596.jpg" alt="">
@@ -185,19 +185,7 @@
     </main>
 
     <script>
-        const top_ = document.querySelectorAll('.top');
-        const nav_ = document.querySelectorAll('.nav');
-        const list_ = document.querySelectorAll('.list');
-
-        for(let i = 0; i< top_.length; i++){
-            top_[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        for(let i = 0; i< nav_.length; i++){
-            nav_[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        for(let i = 0; i< list_.length; i++){
-            list_[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
+        AOS.init();
     </script>
     
 </body>

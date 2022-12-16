@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>career - 위블링</title>
-
+    <title>contact - 위블링</title>
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/contact.css" rel="stylesheet">
     <link rel="icon" href="./img/W.png" type="image/x-icon" sizes="16x16">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="./index.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
 </head>
 <body>
 
     <main>
         <section class="sub-top">
-            <h2>Contact</h2>
-            <p>소중한 제휴 문의를 기다립니다</p>
+            <h2 data-aos="fade-up" data-aos-duration="800">Contact</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">소중한 제휴 문의를 기다립니다</p>
             <img src="./img/contact/contact-bg-01_n1.png" alt="">
         </section>
 
@@ -84,17 +84,17 @@
         </div>
 
         <div class="map-container">
-            <div class="map-wrap">
-                <section class="top">
+            <div>
+                <section class="top" data-aos="fade-up" data-aos-duration="800">
                     <h2>Location</h2>
                 </section>
             
-                <ul class="nav">
+                <ul class="nav" data-aos="fade-up" data-aos-duration="800">
                     <li><a href="#">위블링 여의도 본사</a></li>
                     <li><a href="#">위블링 제 1 공장</a></li>
                 </ul>
         
-                <p class="location">
+                <p class="location" data-aos="fade-up" data-aos-duration="800">
                     서울특별시 영등포구<br>
                     여의대로 24 전경련회관 21층
                 </p>
@@ -107,31 +107,7 @@
     </main>
 
     <script>
-        const h2 = document.querySelectorAll('h2');
-        const sp = document.querySelectorAll('.sub-top > p');
-        const sh = document.querySelectorAll('.sub-top > h2');
-        const nav_ = document.querySelectorAll('.nav');
-        const location_ = document.querySelectorAll('.location');
-
-        for(let i = 1; i< h2.length; i++){
-            h2[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        
-        for(let i = 0; i< sp.length; i++){
-            sp[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-
-        for(let i = 0; i< sh.length; i++){
-            sh[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        
-        for(let i = 0; i< nav_.length; i++){
-            nav_[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }   
-
-        for(let i = 0; i< location_.length; i++){
-            location_[i].classList.add('animate__animated', 'animate__fadeInUp');
-        }   
+        AOS.init();
     </script>
 
 </body>

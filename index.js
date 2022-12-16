@@ -16,6 +16,9 @@ function head(){
         let idx = $(this).index();
         localStorage.idx = idx;
     })
+
+    
+
 }
 
 function test(){
@@ -23,3 +26,4 @@ function test(){
         $('header ul li').eq(idx).find('a').removeClass('active');
     }
 }
+
