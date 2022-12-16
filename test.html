@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="center">
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum vitae saepe velit adipisci quam magni, esse aut ducimus fugit vero quae molestiae odio minima reprehenderit perspiciatis voluptas, fugiat eligendi.
+        Asperiores dicta ducimus maxime aut vitae ut repudiandae velit modi unde eaque sed fugit distinctio cumque illo non tenetur laborum, reprehenderit iure aliquam ex quia. Quibusdam nihil quos odit porro.
+        Accusantium illo nesciunt sequi, quidem facere tempora animi velit ex doloremque architecto mollitia doloribus asperiores vitae repudiandae ut natus quo deserunt dignissimos? Rem vel porro magni, iusto consequatur perferendis rerum?
+        Tempore aliquam accusamus inventore libero ducimus dolor recusandae veritatis tempora architecto dolore eligendi ut culpa mollitia, accusantium at iste numquam magni. Magni neque, minima repudiandae totam perferendis velit dolorem ab.
+        Sed, vitae laborum. Ipsam pariatur velit iste voluptatum earum, non omnis alias soluta molestias! Sapiente sint incidunt perferendis labore animi nisi blanditiis pariatur iure fugiat, natus, aperiam molestiae itaque quibusdam!
+        Beatae illum, velit repellendus dignissimos iusto, deserunt corrupti provident sed voluptas non enim quibusdam, dicta nobis voluptatibus fugit! Quia praesentium quidem atque dolorem soluta iste aspernatur provident repudiandae nisi labore!
+        Tenetur sit eveniet eos corrupti facere! Quasi obcaecati ea cumque cupiditate modi sunt odio, possimus, velit doloribus recusandae dicta sint explicabo. Sint accusantium quam ex corporis cupiditate debitis veniam quasi.
+        Quasi autem corporis, error recusandae molestiae numquam assumenda velit quo enim id, vel culpa voluptate magni repellendus quos eius tempore similique cupiditate optio aspernatur quam libero suscipit amet! Consequuntur, itaque.
+        Dolorum repellendus numquam, deserunt ipsum officia reprehenderit quod ipsam aliquam ullam neque non! Ea distinctio repellat dolorum quis eius fugit architecto natus. Illo laborum inventore fuga, sit cum illum aliquam!
+        Eligendi quibusdam, vitae sed alias, totam ducimus nostrum minus accusantium laudantium dolores unde! Corporis impedit vitae, voluptate velit, omnis dolorem reiciendis voluptatibus, magnam molestias earum alias repudiandae asperiores odit minus.</div>
+    </div>
+    <div class="last"></div>
+    <style>
+        body{
+            height: 50000px;
+            margin:0;
+        }
+        .first,
+        .last{
+            width: 100%;
+            height: 2000px;
+            background-color : green;
+        }
+        .center{
+            width: 10000px;
+            height: 10000px;
+        }
+        .content{
+            width: 10000px;
+            height: 100vh;
+            background-color: yellowgreen;
+            font-size: 10rem;
+            color: green;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        const BACK = document.querySelector('.center');
+        const CONTENT = document.querySelector('.content');
+
+        const BODY = document.querySelector('body');
+
+
+        console.log(BACK.offsetTop);
+        BODY.addEventListener('mousewheel', function(){
+            if(pageYOffset > BACK.offsetTop){
+                CONTENT.style = `position: fixed; top:0; transform: translateX(-${pageYOffset - BACK.offsetTop}px); transition: 300ms`;
+            }
+            if(pageYOffset < BACK.offsetTop){
+                CONTENT.style = `position: relative; top:0; transform: translateX(-${pageYOffset - BACK.offsetTop}px); transition: 300ms`;
+            }
+        })
+    </script>
+</body>
+</html>

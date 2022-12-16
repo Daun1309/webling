@@ -90,7 +90,7 @@ div.banner ul {
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-  transition: 500ms;
+  transition: 200ms;
 }
 div.banner ul .b-text {
   position: absolute;

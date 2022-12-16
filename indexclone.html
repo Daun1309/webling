@@ -146,51 +146,86 @@
       </div>
 
 
+
+
+
       <script>
         const elMain = document.querySelector('.banner'),
             elDiv = document.querySelector('.banner > div'),
             elUl = document.querySelector('.banner ul'),
-            elSec = document.querySelectorAll('.banner ul li'),
-            MAIN = document.querySelector('body');
+            elSec = document.querySelectorAll('.banner ul li');
 
-           
+            console.log(elMain.offsetTop);
+            
 
         function scrollH(){
-          let numScroll = 4554;
-          
+
           window.onscroll = function(){
-            let bb=0;
-            elSec.forEach((v)=>{
-              bb += v.offsetWidth+120;
-            })
-            console.log(bb)
-            if(elMain.offsetTop < window.pageYOffset && window.pageYOffset < numScroll){
+            if(elMain.offsetTop < window.pageYOffset && window.pageYOffset < 3714){
               elDiv.classList.add('active');
               elDiv.style = `padding-top:${0}px`;
+              animation();
 
-            }else if( window.pageYOffset > numScroll){
+            }else if( window.pageYOffset > 3714){
               elDiv.classList.remove('active');
-              elDiv.style = `padding-top:${(numScroll - window.innerHeight)*0.85}px`;
-            }else if( pageYOffset < elMain.offsetTop){
-                elDiv.classList.remove('active');
-                elMain.style += "left: 0";
+              elDiv.style = `padding-top:${3614 - window.innerHeight}px`;
+
             }else{
               elDiv.classList.remove('active');
               elDiv.style = `padding-top:${0}px`;
             }
           }
 
-          console.log(elMain.offsetWidth);
 
-          MAIN.addEventListener('mousewheel', function(){
-            if(pageYOffset > elMain.offsetTop && pageYOffset < numScroll){
-                elUl.style = `transform: translateX(-${pageYOffset-elMain.offsetTop}px);`;
-            }
+
+          let move = 0;
+          let arr =[];
+            elSec.forEach(function (elSection, key) {
+              elSection.addEventListener('mousewheel', function () {
+                  animation(key);
+                //console.log(window.pageYOffset);
+              })
           })
+
+          function animation(key) {
+            //console.log(key);
+              try {
+                  if (event.wheelDelta < 0) {
+                      move = elSec[key].nextElementSibling.offsetLeft;
+                      //key++;
+                  } else{
+                      move = elSec[key].previousElementSibling.offsetLeft;
+                      //key--;
+                  };
+              } catch { }
+              //console.log(window.pageYOffset);
+              elUl.style = `transform:translateX(-${move}px);`;
+          }
+          
+          // function animation() {
+          //   arr=[450,450,450,450,450,450];
+          //     try {
+
+          //       arr.forEach(function(num,k){
+          //         if (event.wheelDelta < 0) {
+          //           console.log(event.wheelDelta);
+          //             elUl.style = `transform:translateX(${num}px);`;
+          //         }  else{
+        
+          //             elUl.style = `transform:translateX(-${num}px);`;
+          //         };
+          //       })
+                  
+          //     } catch { }
+          // }
+
         }
 
         scrollH();
         AOS.init();
+
+        
+
 
       </script>
 
