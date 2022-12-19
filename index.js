@@ -4,11 +4,10 @@ $('body').append('<footer>');
 $('header').load('./inc.html .header', head);
 $('footer').load('./inc.html footer > div'); 
 
-let idx = localStorage.idx || 0;  
+let idx = localStorage.idx ;  
 
 function head(){
     $('header ul li').eq(idx).find('a').addClass('active');
-    //$('header ul li').eq(idx).find('a').css('color','pink');
     test();
     console.log(idx);
 
@@ -17,13 +16,12 @@ function head(){
         localStorage.idx = idx;
     })
 
-    
-
 }
 
 function test(){
-    if(window.location.href.split('/')[3] == 'index.html'){
+    if(window.location.href.split('/')[3] === 'index.html'){
         $('header ul li').eq(idx).find('a').removeClass('active');
+        window.localStorage.removeItem('idx');
     }
 }
 
@@ -31,18 +29,19 @@ let didScroll;
 let lastScrollTop = 0;
 let delta = 5;
 let navbarHeight = $('header').outerHeight();
+let interval;
 
 $(window).scroll(function(event){
     didScroll = true;
 });
 
 function stop(){
-    console.log("stopped")
-    clearInterval(interval)
+    console.log("stopped");
+    clearInterval(interval);
 }
 stop();
 
-let interval = setInterval(function() {
+interval = setInterval(function() {
     if (didScroll) {
         hasScrolled();
         didScroll = false;
