@@ -1,34 +1,5 @@
 $size: 1800px;
 $b: bold;
-// .bg{
-// 	margin: 0px auto;
-// 	width: 1400px;
-// 	>div{
-// 		display: flex;
-// 		p{
-// 			width: 300px;
-// 			height: 200px;
-// 		}
-// 		$array : (1:'main-section-05-img-01.jpg', 2:'02.jpg', 3:'03.jpg');
-
-// 		@each $i,$name in $array {
-// 			p:nth-of-type(#{$i}){
-// 				background: url('../img/#{$name}') 0 0 /cover no-repeat;
-// 			}
-// 		}
-
-// 		background: url('../img/#{$name,$i}') 0 0 /cover no-repeat;
-
-// 		@for $i from 1 to 3 {
-
-// 			//nth($array, $i)
-// 			p:nth-of-type(#{$i}){
-// 				background: url('../img/#{nth($name,$i)}') 0 0 /cover no-repeat;
-// 			}
-// 		}
-
-// 	}
-// }
 
 section.wrap {
   position: relative;
@@ -115,7 +86,7 @@ div.banner {
   margin: 0px 0px 0px 0px;
   height: 3714px;
   position: relative;
-  
+  overflow: hidden;
   
   ul {
     width: 100%;

@@ -48,7 +48,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   height: 8%;
   background-color: rgb(172, 172, 172);
-  /* 스크롤바 둥글게 설정    */
   border-radius: 10px;
 }
 
@@ -59,14 +58,26 @@ body::-webkit-scrollbar-track {
 
 div.header {
   display: flex;
-  max-width: 1700px;
+  width: 100%;
   justify-content: space-between;
-  padding: 0 18px;
   height: 85px;
   margin: auto;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.2s ease-in-out;
+  z-index: 1000;
 }
 div.header h1 {
   margin: auto 0;
+  padding-left: 18px;
+}
+
+.nav-up {
+  top: -85px;
 }
 
 button.bar {
@@ -120,6 +131,7 @@ div.language-warp {
   position: relative;
   margin: auto 0;
   display: flex;
+  padding-right: 18px;
 }
 
 div.language-warp a:nth-of-type(1),
@@ -135,7 +147,7 @@ div.language-warp a:nth-of-type(1)::after {
   height: 8px;
   background-color: #aaa;
   top: 50%;
-  right: 70%;
+  right: 75%;
   transform: translate(-50%, -50%);
 }
 
@@ -147,7 +159,7 @@ div.language-warp a:nth-of-type(2)::after {
   height: 8px;
   background-color: #aaa;
   top: 50%;
-  right: 26%;
+  right: 38%;
   transform: translate(-50%, -50%);
 }
 
