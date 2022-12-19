@@ -1,7 +1,7 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
 
-$('header').load('./inc.html header', head);
+$('header').load('./inc.html .header', head);
 $('footer').load('./inc.html footer > div'); 
 
 let idx = localStorage.idx || 0;  
@@ -36,7 +36,13 @@ $(window).scroll(function(event){
     didScroll = true;
 });
 
-setInterval(function() {
+function stop(){
+    console.log("stopped")
+    clearInterval(interval)
+}
+stop();
+
+let interval = setInterval(function() {
     if (didScroll) {
         hasScrolled();
         didScroll = false;
@@ -50,16 +56,11 @@ function hasScrolled() {
         return;
     
     if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-        console.log("addClass");
+        $('.header').addClass('nav-up');
     } else {
-        // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-            console.log("removeClass");
+            $('.header').removeClass('nav-up')
         }
     }
-    
     lastScrollTop = st;
 }

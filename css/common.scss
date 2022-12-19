@@ -62,7 +62,6 @@ div.header{
     width: 100%;
     justify-content: space-between;
     height: 85px;
-    margin: auto;
     backdrop-filter: blur(40px) ;
     background-color: rgba(255,255,255,0.08);
     position: fixed;
@@ -76,7 +75,7 @@ div.header{
     }   
 }
 .nav-up {
-    top: -85px;
+    top: -85px !important;
     //display: none;
 }
 button.bar{
