@@ -19,12 +19,13 @@ function head(){
 }
 
 function test(){
-    if(window.location.href.split('/')[3] === 'index.html'){
+    if(window.location.href.match('index.html')){
         $('header ul li').eq(idx).find('a').removeClass('active');
-        window.localStorage.removeItem('idx');
     }
 }
 
+
+//header 위로 스크롤시 보이게
 let didScroll;
 let lastScrollTop = 0;
 let delta = 5;
