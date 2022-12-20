@@ -4,13 +4,32 @@ main {
 
 div.banner-img {
   background-image: url("../img/culture/fff.jpg");
-  width: 100%;
   padding-top: 31.2%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0px auto;
+  -webkit-animation: img 1000ms;
+          animation: img 1000ms;
 }
 
+@-webkit-keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
 div.banner-img2 {
   background-image: url("../img/culture/culture-bg-03_n1.jpg");
   width: 100%;
@@ -84,10 +103,12 @@ section.section01 div.bg01 {
   background-image: url("../img/culture/culture-bg-01.png");
   position: absolute;
   top: 14%;
-  left: 22%;
+  left: -20%;
   transform: translateX(-50%);
   z-index: -1;
   overflow: hidden;
+  transition: 1s;
+  scroll-behavior: smooth;
 }
 section.section01 div.bg02 {
   width: 1803px;
@@ -95,10 +116,12 @@ section.section01 div.bg02 {
   background-image: url("../img/culture/culture-bg-02.png");
   position: absolute;
   bottom: 39%;
-  left: 62%;
+  left: -20%;
   transform: translateX(-50%);
   z-index: -1;
   overflow: hidden;
+  transition: 1s;
+  scroll-behavior: smooth;
 }
 
 div.banner-img2 {

@@ -4,13 +4,18 @@ main{overflow: hidden;}
 
 div.banner-img{
     background-image: url("../img/culture/fff.jpg");
-    width: 100%;
     padding-top: 31.2%;
     // 가로 1920px 세로 600px 울 세로/가로(600/1920)을 해서 세로비율(31.2)을 padding값으로 넣어주면 
     // 화면을 확대하고 줄여도 사진은 그대로 보여진다.
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0px auto;
+    animation: img 1000ms;
+}
+@keyframes img{
+    from{ width: 60%; }
+    to{ width: 100%; }
 }
 
 div.banner-img2{
@@ -88,10 +93,12 @@ section.section01{
         background-image: url("../img/culture/culture-bg-01.png");
         position: absolute;
         top: 14%;
-        left: 22%;
+        left: -20%;
         transform: translateX(-50%);
         z-index: -1;
         overflow: hidden;
+        transition: 1s;
+        scroll-behavior: smooth;
     }
 
     div.bg02{
@@ -100,10 +107,12 @@ section.section01{
         background-image: url("../img/culture/culture-bg-02.png");
         position: absolute;
         bottom: 39%;
-        left: 62%;
+        left: -20%;
         transform: translateX(-50%);
         z-index: -1;
         overflow: hidden;
+        transition: 1s;
+        scroll-behavior: smooth;
     }
 }
 

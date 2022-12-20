@@ -16,12 +16,31 @@ section.sub-top p {
 
 div.banner-img {
   background-image: url("../img/career/bcf68550518b34aa38c61283f8b95069.jpg");
-  width: 100%;
   padding-top: 32%;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0px auto;
+  -webkit-animation: img 1000ms;
+          animation: img 1000ms;
 }
 
+@-webkit-keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
 ul.nav {
   width: 1200px;
   display: flex;

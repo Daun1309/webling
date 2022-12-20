@@ -73,12 +73,31 @@ li.ooo {
 
 div.banner-img2 {
   background-image: url("../img/benefit/bg-img.jpg");
-  width: 100%;
   padding-top: 32%;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0px auto;
+  -webkit-animation: img 1000ms;
+          animation: img 1000ms;
 }
 
+@-webkit-keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes img {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
 div.img01 {
   background-image: url("../img/benefit/benefit-img-01.png");
   width: 100%;

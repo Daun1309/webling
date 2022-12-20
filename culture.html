@@ -207,7 +207,19 @@
             });
 
             AOS.init();
+
+            const bg01 = document.querySelector(".bg01"),
+                bg02 = document.querySelector(".bg02"),
+                text = document.querySelector(".section01");
+
+            window.addEventListener('scroll',function(){
+                if (text.offsetTop*0.5 < window.pageYOffset) {
+                    bg01.style = `transform: translateX(${scrollY-text.offsetTop*0.5}px);`
+                    bg02.style = `transform: translateX(-${scrollY-text.offsetTop*0.5}px);`
+                } 
+            })
+            
         </script>
     </main>
 </body>
-</html>s
+</html>

@@ -77,11 +77,15 @@ li.ooo{
 
 div.banner-img2{
     background-image: url("../img/benefit/bg-img.jpg");
-    width: 100%;
     padding-top: 32%;
-    //background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0px auto;
+    animation: img 1000ms;
+}
+@keyframes img{
+    from{ width: 60%; }
+    to{ width: 100%; }
 }
 
 div.img01{
