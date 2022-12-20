@@ -19,10 +19,21 @@ function head(){
 }
 
 function test(){
-    if(window.location.href.match('index.html')){
+    if(window.location.href.match('index.html') ||
+    !(
+        (window.location.href.match('culture.html')) ||
+        (window.location.href.match('benefit.html')) ||
+        (window.location.href.match('story.html')) ||
+        (window.location.href.match('carrer.html')) ||
+        (window.location.href.match('contact.html'))
+    )
+    ){
         $('header ul li').eq(idx).find('a').removeClass('active');
     }
 }
+
+
+
 
 
 //header 위로 스크롤시 보이게
