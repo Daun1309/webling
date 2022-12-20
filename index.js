@@ -24,7 +24,7 @@ function test(){
         (window.location.href.match('culture.html')) ||
         (window.location.href.match('benefit.html')) ||
         (window.location.href.match('story.html')) ||
-        (window.location.href.match('carrer.html')) ||
+        (window.location.href.match('career.html')) ||
         (window.location.href.match('contact.html'))
     )
     ){
