@@ -315,9 +315,20 @@ div.circle-img-container div.circle-img ul {
 }
 div.circle-img-container div.circle-img ul li {
   margin-right: 30px;
+  position: relative;
 }
 div.circle-img-container div.circle-img ul li img {
   width: 156px;
+}
+
+div ul li.filter img {
+  filter: brightness(0.35);
+}
+div ul li.filter svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 div.circle-text {

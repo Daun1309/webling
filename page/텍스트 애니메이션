@@ -1,6 +1,7 @@
 
 <div class="parent"><div class="child">텍스트 애니메이션</div></div>
 
+<style>
 .parent {
     height: 3em; /* 애니메이션 높이 */
     overflow-y: hidden;
@@ -18,7 +19,7 @@
     from { transform: translateY(3em) }/* 애니메이션 높이 */
     to { transform: translateY(0) }
 }
-
+</style>
 <!-- <div>
         <p>
             <span>W</span>
@@ -53,8 +54,8 @@
         });
         };
     </script> -->
-    /* 0%{transform: translateY(0) }
+    <!-- /* 0%{transform: translateY(0) }
     35%{transform: translateY(-3em)}
 
     65%{transform: translateY(3em)}
-    100%{transform: translateY(0)} */
+    100%{transform: translateY(0)} */ -->

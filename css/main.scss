@@ -325,9 +325,11 @@ section.brand-list a:hover::after {
   bottom: -10%;
   right: auto;
 }
+
 div.circle-img-container-m {
   display: none;
 }
+
 div.circle-img-container {
   margin: 0px 45px;
   padding: 50px 60px 0px 60px;
@@ -342,12 +344,26 @@ div.circle-img-container {
 
       li {
         margin-right: 30px;
+        position: relative;
         img {
           width: 156px;
+          
         }
       }
     }
   }
+}
+div ul li.filter{
+  img{
+    filter: brightness(0.35);
+  }
+  svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
 }
 
 div.circle-text {
@@ -425,6 +441,7 @@ a.apply-btn-2 {
     width: 100%;
     position: relative;
     z-index: 1;
+    
     div.text-wrap {
       padding: 0px 20px;
       position: relative;
