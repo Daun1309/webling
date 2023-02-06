@@ -169,4 +169,98 @@ body {
   cursor: url("../img/DRAG.cur") 50 50, auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section.sub-top {
+    margin: 100px 0px 200px 60px;
+  }
+  section.sub-top h2 {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  section.sub-top p {
+    font-size: 18px;
+  }
+  div.banner-img2 {
+    transform: scale(2);
+  }
+  section.text {
+    margin: 200px 60px 60px 60px;
+  }
+  section.text h3 {
+    font-size: 32px;
+  }
+  div.img01, div.img02, div.img03, div.img04 {
+    width: 90%;
+    padding-top: 32%;
+    margin-bottom: 60px;
+    margin-left: auto;
+    border-radius: 150px 0px 0px 0px;
+  }
+  div.banner-img2 h4 {
+    font-size: 30px;
+  }
+  div.icon-list {
+    margin: 80px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  div.icon-list h4 {
+    margin-bottom: 50px;
+  }
+  div.icon-list ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+}
+@media (max-width: 767px) {
+  section.sub-top {
+    margin: 100px 0px 50px 15px;
+  }
+  section.sub-top h2 {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  section.sub-top p {
+    font-size: 18px;
+    margin-top: -5px;
+  }
+  div.banner-img2 {
+    background-image: url("https://ifh.cc/g/NTRyPy.jpg");
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 220px;
+  }
+  section.text {
+    margin: 50px 15px 60px 15px;
+  }
+  section.text h3 {
+    font-size: 32px;
+  }
+  div.img01, div.img02, div.img03, div.img04 {
+    width: 90%;
+    padding-top: 32%;
+    margin-bottom: 60px;
+    margin-left: auto;
+    border-radius: 150px 0px 0px 0px;
+  }
+  div.banner-img2 h4 {
+    font-size: 30px;
+  }
+  div.icon-list {
+    margin: 80px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  div.icon-list h4 {
+    margin-bottom: 50px;
+  }
+  div.icon-list ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
 }/*# sourceMappingURL=benefit.css.map */

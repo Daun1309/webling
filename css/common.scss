@@ -124,7 +124,7 @@ a.active::after{
     width: 100%;
 }
 
-div.language-warp{
+div.language-wrap{
     font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
@@ -134,12 +134,12 @@ div.language-warp{
     padding-right: 18px;
 }
 
-div.language-warp a:nth-of-type(1),
-div.language-warp a:nth-of-type(2){
+div.language-wrap a:nth-of-type(1),
+div.language-wrap a:nth-of-type(2){
     margin-right: 24px;
 }
 
-div.language-warp a:nth-of-type(1)::after{
+div.language-wrap a:nth-of-type(1)::after{
     content: '';
     display: block;
     position: absolute;
@@ -151,7 +151,7 @@ div.language-warp a:nth-of-type(1)::after{
     transform: translate(-50%,-50%);
 }
 
-div.language-warp a:nth-of-type(2)::after{
+div.language-wrap a:nth-of-type(2)::after{
     content: '';
     display: block;
     position: absolute;
@@ -216,6 +216,9 @@ footer{
     
 }
 
+#icon,#header,label{
+    display: none;
+}
 
 @import"_media";
 
@@ -245,9 +248,119 @@ footer{
         h1{
             margin: auto 0;
         }
+
+        div.language-wrap-m{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a{
+                padding: 15px;
+            }
+        }
+    
+        nav.pc-nav-m{
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    line-height: 70px;
+                    a{
+                        font-size: 2.3rem;
+                        font-weight: bolder;
+                        letter-spacing :0.9px;
+                        position: relative;
+                    }
+                        
+                }
+            }
+        }
     }
-    nav.pc-nav, div.language-warp{
+
+    a.active::after {
+        top: 100%;
+    }
+
+    nav.pc-nav, div.language-wrap{
         display: none;
+    }
+
+    #header{
+        display: block;
+    }
+
+
+
+
+    input[id="icon"] {
+        display:none;
+    } 
+    
+    input[id="icon"] + label{
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin: 15px 30px 0px 0px;
+    } 
+    
+    input[id="icon"] + label > span {
+        position: absolute;
+        display:block;
+        width:100%;
+        height:3px;
+        border-radius:30px;
+        background:#000;
+        transition: all 0.5s;
+        z-index:2;
+    
+    }
+    
+    input[id="icon"] + label > span:nth-child(1) {
+        top:0px;
+    }
+    
+    input[id="icon"] + label > span:nth-child(2) {
+        top:50%;
+        transform: translateY(-50%); 
+    }
+    
+    input[id="icon"] + label > span:nth-child(3) {
+        bottom:0px;
+    }
+    
+    
+    input[id="icon"]:checked + label > span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+    
+    #icon + label + #header {
+        position:fixed;  
+        width:100%;
+        height:100vh;
+        background:#fff;
+        top:0px;
+        padding:60px 25px 25px 25px;
+        box-sizing:border-box;
+        left:100%;
+        z-index:1;
+        transition: all 0.35s;
+        margin-top: 60px;
+    }
+    
+    #icon:checked + label + #header {
+        left:0px;
     }
 
     button.bar{
@@ -263,8 +376,7 @@ footer{
         top: 2%;
         z-index: 999;
 
-       
-       span{
+    span{
             position: absolute;
             left: 0;
             width: 100%;
@@ -297,6 +409,17 @@ footer{
         
     }
     
+
+
+
+
+
+
+
+
+
+
+
     footer{
         font-family: 'Poppins', sans-serif;
         padding: 50px;
@@ -371,8 +494,121 @@ footer{
         h1{
             margin: auto 0;
         }
+
+        div.language-wrap-m{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a{
+                padding: 15px;
+            }
+        }
+    
+        nav.pc-nav-m{
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    line-height: 70px;
+                    a{
+                        font-size: 2.3rem;
+                        font-weight: bolder;
+                        letter-spacing :0.9px;
+                        position: relative;
+                    }
+                        
+                }
+            }
+        }
     }
-    nav.pc-nav, div.language-warp{
+
+    a.active::after {
+        top: 100%;
+    }
+
+    nav.pc-nav, div.language-wrap{
+        display: none;
+    }
+
+    #header{
+        display: block;
+    }
+
+
+
+
+    input[id="icon"] {
+        display:none;
+    } 
+    
+    input[id="icon"] + label{
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin: 15px 30px 0px 0px;
+    } 
+    
+    input[id="icon"] + label > span {
+        position: absolute;
+        display:block;
+        width:100%;
+        height:3px;
+        border-radius:30px;
+        background:#000;
+        transition: all 0.5s;
+        z-index:2;
+    
+    }
+    
+    input[id="icon"] + label > span:nth-child(1) {
+        top:0px;
+    }
+    
+    input[id="icon"] + label > span:nth-child(2) {
+        top:50%;
+        transform: translateY(-50%); 
+    }
+    
+    input[id="icon"] + label > span:nth-child(3) {
+        bottom:0px;
+    }
+    
+    
+    input[id="icon"]:checked + label > span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    input[id="icon"]:checked + label > span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+    
+    #icon + label + #header {
+        position:fixed;  
+        width:100%;
+        height:100vh;
+        background:#fff;
+        top:0px;
+        padding:60px 30px 25px 0px;
+        box-sizing:border-box;
+        left:100%;
+        z-index:1;
+        transition: all 0.35s;
+        margin-top: 60px;
+    }
+    
+    #icon:checked + label + #header {
+        left:0px;
+    }
+    nav.pc-nav, div.language-wrap{
         display: none;
     }
 

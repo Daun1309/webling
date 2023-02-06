@@ -197,4 +197,369 @@ ul.nav li:nth-of-type(1)::after {
 p.location {
   font-size: 2.125rem;
   margin: 170px auto 200px auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section.sub-top {
+    max-width: calc(100% - 60px);
+    margin: 100px 60px 35px 60px;
+    position: relative;
+  }
+  section.sub-top h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  section.sub-top p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  section.sub-top img {
+    position: absolute;
+    top: -55%;
+    left: 68%;
+    width: 250px;
+  }
+  div.container {
+    max-width: calc(100% - 120px);
+    margin: 0px 60px;
+  }
+  div.brand {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+  div.brand p {
+    font-size: 1.125rem;
+    font-weight: 900;
+    margin: 80px 0px 20px 0px;
+  }
+  div.brand button {
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+    height: 68px;
+    border-radius: 32px;
+    border: 2px solid rgb(16, 16, 16);
+    padding: 20px 40px;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+  div.brand button:nth-of-type(1) {
+    background-color: #DBDBDB;
+  }
+  div.input {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  div.input-text {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  div.input-text p {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: #9D9D9D;
+  }
+  div.input-text {
+    position: relative;
+    z-index: -2;
+  }
+  div.input-text p {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: #9D9D9D;
+  }
+  textarea.input-textarea {
+    width: calc(100% - 120px);
+    margin: 0px 60px;
+    height: 110px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    line-height: 23.5px;
+    font-weight: 500;
+    resize: none;
+  }
+  textarea.input-textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  input.check {
+    width: 15px;
+    margin-top: 20px;
+  }
+  span.agr {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  button.btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 50px auto;
+    padding: 20px 0px;
+    cursor: url("../img/contact/submit.cur") 50 50, auto;
+  }
+  button.btn svg {
+    margin-left: 35px;
+  }
+  button.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -42%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgba(231, 217, 217, 0.2);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  div.map-container {
+    width: calc(100% - 60px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  div.map-container iframe {
+    width: 100%;
+  }
+  section {
+    margin: 100px auto 0px auto;
+  }
+  section h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4.75rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  ul.nav {
+    display: flex;
+    margin: 50px auto;
+  }
+  ul.nav li {
+    padding: 0px 20px;
+    font-size: 1.625rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  ul.nav li a {
+    color: #7f7f7f;
+  }
+  ul.nav li:nth-of-type(1) {
+    padding: 0px 20px 0px 0px;
+    position: relative;
+  }
+  ul.nav li:nth-of-type(1) a {
+    color: #000;
+  }
+  ul.nav li:nth-of-type(1)::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #000;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p.location {
+    font-size: 2.125rem;
+    margin: 170px auto 200px auto;
+  }
+}
+@media (max-width: 767px) {
+  section.sub-top {
+    max-width: calc(100% - 30px);
+    margin: 100px 15px 35px 15px;
+    position: relative;
+  }
+  section.sub-top h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  section.sub-top p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  section.sub-top img {
+    position: absolute;
+    top: -15%;
+    left: 49%;
+    width: 150px;
+  }
+  div.container {
+    max-width: calc(100% - 30px);
+    margin: 0px 15px;
+  }
+  div.brand {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+  div.brand p {
+    font-size: 1.125rem;
+    font-weight: 900;
+    margin: 80px 0px 20px 0px;
+  }
+  div.brand button {
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    font-size: 0.8rem;
+    height: 44px;
+    border-radius: 32px;
+    border: 2px solid rgb(16, 16, 16);
+    padding: 0px 15px;
+    background-color: #fff;
+    margin-right: 1px;
+  }
+  div.brand button:nth-of-type(1) {
+    background-color: #DBDBDB;
+  }
+  div.input {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  div.input-text {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  div.input-text p {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: #9D9D9D;
+  }
+  div.input-text {
+    position: relative;
+    z-index: -2;
+  }
+  div.input-text p {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: #9D9D9D;
+  }
+  textarea.input-textarea {
+    width: calc(100% - 30px);
+    margin: 0px 15px;
+    height: 110px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    line-height: 23.5px;
+    font-weight: 500;
+    resize: none;
+  }
+  textarea.input-textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  input.check {
+    width: 15px;
+    margin-top: 20px;
+  }
+  span.agr {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  button.btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+    padding: 20px 0px;
+    cursor: url("../img/contact/submit.cur") 50 50, auto;
+  }
+  button.btn svg {
+    margin-left: 35px;
+  }
+  button.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(231, 217, 217, 0.2);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  div.map-container {
+    width: calc(100% - 30px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  div.map-container iframe {
+    width: 90%;
+  }
+  section {
+    margin: 0px;
+  }
+  section h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  ul.nav {
+    display: flex;
+    margin: 50px auto;
+  }
+  ul.nav li {
+    padding: 0px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  ul.nav li a {
+    color: #7f7f7f;
+  }
+  ul.nav li:nth-of-type(1) {
+    padding: 0px 20px 0px 0px;
+    position: relative;
+  }
+  ul.nav li:nth-of-type(1) a {
+    color: #000;
+  }
+  ul.nav li:nth-of-type(1)::after {
+    display: none;
+  }
+  p.location {
+    font-size: 1rem;
+    margin: 0px 0px 50px 0px;
+  }
 }/*# sourceMappingURL=contact.css.map */
